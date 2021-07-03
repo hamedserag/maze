@@ -251,7 +251,8 @@ function reset() {
 //check if won
 function checkWin(block) {
   if (block.getAttribute("id") == "end") {
-    alert("win"); //END GAME
+    alert("you won"); //END GAME
+    parent.postMessage("Hello","https://davidwalsh.name");
     document.querySelector(".controls").innerHTML = "";
     for (var i = 0; i < path.length; i++) {
       path[i].style.background = "#fff";

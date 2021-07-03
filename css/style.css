@@ -85,3 +85,7 @@ h1 {
   color: #FDD401;
   font-family: 'Bebas Neue', cursive;
 }
+iframe{
+  width: 100vw;
+  height: 100vh;
+}

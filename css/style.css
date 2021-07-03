@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E1E1E1;
+}
+
+.start, .end, #player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+}
+.end{
+  color: #000;
+}
+
+.path {
+  background: white;
+}
+
+.grid {
+  background: #000;
+}
+
+.col-1 {
+  height: 50px;
+}
+
+.container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#player {
+  position: absolute;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+}
+
+.customBtn {
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.btnMid {
+  border-radius: 0;
+}
+.btnMid:hover{
+  color: #fff;
+}
+.btnUp {
+  border-radius: 10px 10px 0 0;
+}
+
+.btnDown {
+  border-radius: 0 0 10px 10px;
+}
+.btnLeft{
+  border-radius: 10px 0 0 10px;
+}
+.btnRight{
+  border-radius: 0 10px 10px 0;
+}
+
+.btnUp i {
+  transform: rotate(-90deg);
+}
+
+.btnDown i {
+  transform: rotate(90deg);
+}
+
+.btnLeft i {
+  transform: rotate(180deg);
+}

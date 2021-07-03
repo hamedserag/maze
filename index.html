@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">
+  <!--/BOOTSTRAP-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div class="container" id="map">
+
+  </div>
+  <div id="player" class="bg-danger">Player</div>
+  <div class="container-fluid controls">
+    <div class="row justify-content-center">
+      <button onclick="moveDirection(0)" class="btn btn0 customBtn btnUp" type="button" name="button"><i class="fa fa-angle-right"></i></button>
+    </div>
+    <div class="row justify-content-center">
+      <button onclick="moveDirection(2)" class="btn btn2 customBtn btnLeft" type="button" name="button"><i class="fa fa-angle-right"></i></button>
+      <button class="btn customBtn btnMid" type="button" name="button"><i class="fa fa-circle"></i></button>
+      <button onclick="moveDirection(3)" class="btn btn3 customBtn btnRight" type="button" name="button"><i class="fa fa-angle-right"></i></button>
+    </div>
+    <div class="row justify-content-center">
+      <button onclick="moveDirection(1)" class="btn btn1 customBtn btnDown" type="button" name="button"><i class="fa fa-angle-right"></i></button>
+    </div>
+  </div>
+</body>
+<footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!--BOOTSTRAP-->
+  <script src="bootstrap/js/bootstrap.bundle.js" charset="utf-8"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+  <script src="bootstrap/js/bootstrap.js" charset="utf-8"></script>
+  <script src="bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+  <!--/BOOTSTRAP-->
+  <script src="js/app.js" charset="utf-8"></script>
+  <script src="js/appChecker.js" charset="utf-8"></script>
+</footer>
+
+</html>

@@ -251,9 +251,8 @@ function reset() {
 //check if won
 function checkWin(block) {
   if (block.getAttribute("id") == "end") {
-    alert("you won"); //END GAME
-    parent.postMessage("Hello","https://davidwalsh.name");
-    document.querySelector(".controls").innerHTML = "";
+    alert("win"); //END GAME
+    document.querySelector("#body").innerHTML = '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefhx-s8XsC-DwNG9dW46CVd3nrKoOsdR0BHJDTlXu9lY8-Sw/viewform?embedded=true" width="640" height="376" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
     for (var i = 0; i < path.length; i++) {
       path[i].style.background = "#fff";
     }
@@ -263,13 +262,14 @@ function checkWin(block) {
 var path = document.querySelectorAll(".path");
 var endObj = document.querySelector("#end");
 vision(possibleMoves);
+
 function vision(possibleMoves) {
   for (var i = 0; i < path.length; i++) {
     path[i].style.background = "#000";
   }
   for (var i = 0; i < possibleMoves.length; i++) {
     blocks[((possibleMoves[i][0] * 12) + possibleMoves[i][1])].style.background = "#fff";
-    if(blocks[((possibleMoves[i][0] * 12) + possibleMoves[i][1])] == endObj){
+    if (blocks[((possibleMoves[i][0] * 12) + possibleMoves[i][1])] == endObj) {
       endObj.innerHTML = "Finish";
     }
   }

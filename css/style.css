@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #E1E1E1;
-}
-
 .start, .end, #player {
   display: flex;
   align-items: center;
